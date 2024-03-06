@@ -211,7 +211,8 @@ input {
 
 .home {
     background: url("../image/me\ 2.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: right center;
     background-repeat: no-repeat;
 
@@ -315,8 +316,43 @@ input {
 
 }
 
-/* ================== Sidebar ================== */
+/* ================== Button ================== */
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    padding: 0.75rem 1.4rem;
+    border-radius: 0.25rem;
+    font-weight: var(--font-medium);
+    position: relative;
+    /* Add this line */
+    z-index: 1;
+    /* Add this line */
+    transition: 0.4s;
 
+}
+
+.button::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #343a40;
+    z-index: -1;
+    transform-origin: center;
+    transform: scale(0);
+    border-radius: 0.25rem;
+    transition: 0.3s;
+}
+
+.button:hover::after {
+    transform: scale(1);
+
+}
 
 /* ================== Sidebar ================== */
 
