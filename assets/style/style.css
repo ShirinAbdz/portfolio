@@ -105,6 +105,26 @@ input {
 /* ================== Reuseable CSS Classes ================== */
 
 
+.section {
+    padding: 6.5rem 0 2rem;
+}
+
+.section__title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+
+.section__title::before {
+    content: attr(data-heading);
+    display: block;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--skin-color);
+
+}
+
 /* ================== Sidebar ================== */
 
 
@@ -354,8 +374,42 @@ input {
 
 }
 
-/* ================== Sidebar ================== */
+.button__icon {
+    font-size: 1.25rem;
+}
 
+/* ================== About Section ================== */
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: center;
+    align-items: center;
+}
+
+.about__image {
+    width: 48px;
+    border-radius: 0.75rem;
+    justify-content: center;
+}
+
+.about__heading {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+
+}
+
+.about__description {
+    text-align: justify;
+    padding-right: 6rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about__info {
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    column-gap: 0.5rem;
+    margin-bottom: var(--mb-3);
+
+}
 
 /* ================== Sidebar ================== */
 /* ================== Sidebar ================== */
