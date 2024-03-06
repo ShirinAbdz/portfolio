@@ -89,6 +89,23 @@ input {
 }
 
 
+/* ================== Layout ================== */
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.grid {
+    display: grid;
+}
+
+/* ================== Reuseable CSS Classes ================== */
+/* ================== Sidebar ================== */
+
+
+
 .sidebar {
     position: fixed;
     width: 100px;
@@ -154,6 +171,11 @@ input {
     text-align: center;
 }
 
+.social__share {
+    width: 1.5rem;
+
+}
+
 .nav__link.active-link,
 .nav__link:hover {
     color: var(--skin-color);
@@ -175,3 +197,60 @@ input {
     margin: auto;
 
 }
+
+.main {
+    margin-left: 100px;
+
+}
+
+
+
+/* ================== Home Section ================== */
+.home {
+    background: url("../image/me\ 2.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.home__container {
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
+
+.home__image {
+    display: none;
+
+}
+
+.home__social {
+    position: absolute;
+    top: 1.8rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 3.5rem;
+
+}
+
+.home__social-follow {
+    font-weight: var(--font-medium);
+}
+
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
+/* ================== Sidebar ================== */
