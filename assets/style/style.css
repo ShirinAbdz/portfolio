@@ -3,12 +3,12 @@
 :root {
     --hue-color: 242;
     --skin-color: hsl(342, 92%, 46%);
-    --title-color: hsl(var (--hue-color), 8%, 95%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 85%);
-    --body-color: hsl(var (--hue-color), 19%, 5%);
-    --box-color: hsl(var (--hue-color), 14%, 10%);
-    --scroll-bar-color: hsl(var (--hue-color), 12%, 38%);
-    --scroll-thumb-color: hsl(var (--hue-color), 12%, 26%);
+    --body-color: hsl(var(--hue-color), 19%, 5%);
+    --box-color: hsl(var(--hue-color), 14%, 10%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
     --body-font: "Poppins", sans-serif;
     --biggest-font-size: 3rem;
     --h1-font-size: 2.25rem;
@@ -23,6 +23,7 @@
     --mb-0-5: 0.5rem;
     --mb-0-75: 0.75rem;
     --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
     --z-fixed: 10;
@@ -102,6 +103,8 @@ input {
 }
 
 /* ================== Reuseable CSS Classes ================== */
+
+
 /* ================== Sidebar ================== */
 
 
@@ -204,12 +207,15 @@ input {
 }
 
 
-
 /* ================== Home Section ================== */
+
 .home {
     background: url("../image/me\ 2.png");
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
+    background-repeat: no-repeat;
+
+
     height: 100vh;
 }
 
@@ -224,6 +230,16 @@ input {
 
 }
 
+.home__title {
+    font-size: var(--biggest-font-size);
+}
+
+.home__subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
 .home__social {
     position: absolute;
     top: 1.8rem;
@@ -232,6 +248,11 @@ input {
     align-items: center;
     column-gap: 3.5rem;
 
+}
+
+.home__description {
+    max-width: 450px;
+    margin-bottom: var(--mb-2);
 }
 
 .home__social-follow {
@@ -266,8 +287,40 @@ input {
     transform: translateY(.25rem);
 }
 
+.my__info {
+    display: flex;
+    column-gap: 1.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 1.8rem;
+
+
+}
+
+.info__item {
+    display: flex;
+    align-items: center;
+
+}
+
+.info__title,
+.info__subtitle {
+    font-size: var(--font-medium);
+}
+
+.info__icon {
+    font-size: 1.8rem;
+    color: var(--skin-color);
+    margin-right: var(--mb-0-75);
+
+}
+
 /* ================== Sidebar ================== */
+
+
 /* ================== Sidebar ================== */
+
+
 /* ================== Sidebar ================== */
 /* ================== Sidebar ================== */
 /* ================== Sidebar ================== */
