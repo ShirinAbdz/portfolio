@@ -299,7 +299,7 @@ input {
 .home__social-link {
     font-size: 1.08rem;
     color: var(--text-color);
-    transition: .4s;
+    transition: .3s;
 
 
 }
@@ -411,11 +411,211 @@ input {
 
 }
 
-/* ================== Sidebar ================== */
-/* ================== Sidebar ================== */
-/* ================== Sidebar ================== */
-/* ================== Sidebar ================== */
-/* ================== Sidebar ================== */
+.about__box {
+    text-align: center;
+    border-radius: 0.25rem;
+    background-color: var(--box-color);
+    padding: 1rem 1.25rem;
+}
+
+.about__icon {
+    font-size: 1.5rem;
+    color: var(--skin-color);
+    margin-bottom: var(--mb-0-75);
+}
+
+.about__title {
+    font-size: var(--small-font-size);
+}
+
+.about__subtitle {
+    font-size: var(--smaller-font-size)
+}
+
+/* ================== Qualification Section ================== */
+
+.qualification__container {
+    grid-template-columns: repeat(2, 340px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.qualification__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-2);
+}
+
+.timeline__item {
+    padding-left: 3rem;
+    position: relative;
+    margin-bottom: var(--mb-2-5);
+}
+
+.timeline__item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline__item::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    left: 0.48rem;
+    top: 0;
+    height: 100%;
+    background-color: var(--skin-color);
+}
+
+.circle__dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid var(--skin-color);
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+
+.timeline__item:hover .circle__dot {
+    background-color: var(--body-color);
+}
+
+.timeline__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-25);
+}
+
+.timeline__text {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1-5);
+}
+
+.timeline__date {
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+    font-size: var(--small-font-size);
+    color: var(--skin-color);
+}
+
+/* ================== Skills Section ================== */
+
+.skills__container {
+    grid-template-columns: 360px 320px;
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.skills__header {
+    display: flex;
+    align-items: center;
+}
+
+.skills__headrt:not(:last-child) {
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills__icon,
+.skills__arrow {
+    font-size: 2rem;
+    color: var(--skin-color);
+}
+
+.skills__icon {
+    margin-right: var(--mb-0-75);
+}
+
+.skills__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.skills__arrow {
+    margin-left: auto;
+}
+
+.skills__list {
+    row-gap: 1.8rem;
+}
+
+.skills__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+
+.skills__active .skills__arrow {
+    transform: rotate(-90deg);
+    transition: 0.3s;
+}
+
+.skills[data-content] {
+    display: none;
+}
+
+.skills__active[data-content] {
+    display: block;
+}
+
+.skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage {
+    height: 5px;
+    border-radius: 0.25rem;
+}
+
+.skills__bar {
+    background-color: var(--box-color);
+
+}
+
+.skills__percentage {
+    display: block;
+    background-color: var(--skin-color);
+}
+
+/* ================== work ================== */
+
+.work__container {
+    grid-template-columns: repeat(3, 330px);
+    gap: 1.8rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.work__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.work__item {
+    cursor: pointer;
+    color: var(--title-color);
+    padding: .25rem .75rem;
+    font-weight: var(--font-medium);
+    border-radius: 0.5rem;
+}
+
+/* ================== active item work ================== */
+.active__work {
+    background-color: var(--skin-color);
+    color: var(--title-color);
+}
+
 /* ================== Sidebar ================== */
 /* ================== Sidebar ================== */
 /* ================== Sidebar ================== */
