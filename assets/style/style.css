@@ -208,7 +208,7 @@ input {
     right: 1.5rem;
     top: 2rem;
     font-size: 1.2rem;
-    border-radius: .25rem;
+    border-radius: .55rem;
     background-color: var(--skin-color);
     color: var(--title-color);
     display: none;
@@ -848,8 +848,6 @@ input {
 
 
 
-
-
 /* ================== scrollbar  ================== */
 ::-webkit-scrollbar {
     width: .6rem;
@@ -1149,5 +1147,6 @@ input {
     .work__filters {
         column-gap: .25rem;
     }
+
 
 }
