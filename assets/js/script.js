@@ -1,3 +1,19 @@
+const navMenu = document.getElementById("sidebar"),
+  navToggle = document.getElementById("nav-toggle"),
+  navClose = document.getElementById("nav-close");
+
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.add("show-sidebar");
+  });
+}
+
+if (navClose) {
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.remove("show-sidebar");
+  });
+}
+
 const tabs = document.querySelectorAll("[data-target]");
 const tabContent = document.querySelectorAll("[data-content]");
 tabs.forEach((tab) => {
