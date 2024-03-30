@@ -370,7 +370,7 @@
                                 <div class="skills__percentage" style="width: 40%;"></div>
                             </div>
                         </div>
-                    </div </div>
+                    </div>
                 </div>
 
         </section>
@@ -379,18 +379,38 @@
         <section class="work section" id="work">
             <h2 class="section__title" data-heading="My Portfolio">Recent Works</h2>
             <div class="work__filters">
-                <span class="work__item active-work">All</span>
-                <span class="work__item">Web</span>
-                <span class="work__item">Design</span>
-                <span class="work__item">Front</span>
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".design">Design</span>
+                <span class="work__item" data-filter=".front">Front</span>
 
             </div>
 
             <div class="work__container container grid">
-                <div class="work__card">
+                <div class="work__card mix web">
                     <img src="" alt=" " class="work__img">
                     <h3 class="work__title">Lorem, ipsum.</h3>
-                    <span class="work__button">Lorem, ipsum.
+                    <span class="work__button">Demo
+                        <i class="fa-solid fa-angle-right work__button-icon"></i>
+                    </span>
+
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Lorem, ipsum.</h3>
+                        <p class="details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+                            officiis consequatur facilis a perferendis laboriosam aliquid expedita sequi praesentium
+                            quos!</p>
+                        <ul class="details__info">
+                            <li>Created <span>4 dec 2020</span></li>
+                            <li>Technologies <span>html css </span></li>
+                            <li>Role <span>frontend</span></li>
+                            <li>view <span><a href="#"></a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work__card mix front">
+                    <img src="" alt=" " class="work__img">
+                    <h3 class="work__title">Lorem, ipsum.</h3>
+                    <span class="work__button">Demo
                         <i class="fa-solid fa-angle-right work__button-icon"></i>
                     </span>
 
@@ -407,30 +427,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="work__card">
+                <div class="work__card mix design">
                     <img src="" alt=" " class="work__img">
                     <h3 class="work__title">Lorem, ipsum.</h3>
-                    <span class="work__button">
-                        <i class="fa-solid fa-angle-right work__button-icon"></i>
-                    </span>
-
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">Lorem, ipsum.</h3>
-                        <p class="details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
-                            officiis consequatur facilis a perferendis laboriosam aliquid expedita sequi praesentium
-                            quos!</p>
-                        <ul class="details__info">
-                            <li>Created <span>4 dec 2020</span></li>
-                            <li>Technologies <span>html css </span></li>
-                            <li>Role - <span>frontend</span></li>
-                            <li>view - <span><a href="#"></a></span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="work__card">
-                    <img src="" alt=" " class="work__img">
-                    <h3 class="work__title"></h3>
-                    <span class="work__button">
+                    <span class="work__button">Demo
                         <i class="fa-solid fa-angle-right work__button-icon"></i>
                     </span>
 
@@ -447,10 +447,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="work__card">
+                <div class="work__card mix web">
                     <img src="" alt=" " class="work__img">
-                    <h3 class="work__title"></h3>
-                    <span class="work__button">
+                    <h3 class="work__title">Lorem, ipsum.</h3>
+                    <span class="work__button">Demo
                         <i class="fa-solid fa-angle-right work__button-icon"></i>
                     </span>
 
@@ -467,10 +467,10 @@
                         </ul>
                     </div>
                 </div>
-                <div c ass="work__card">
+                <div class="work__card mix front">
                     <img src="" alt=" " class="work__img">
-                    <h3 class="work__title"></h3>
-                    <span class="work__button">
+                    <h3 class="work__title">Lorem, ipsum.</h3>
+                    <span class="work__button">Demo
                         <i class="fa-solid fa-angle-right work__button-icon"></i>
                     </span>
 
@@ -487,10 +487,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="work__card">
+                <div class="work__card mix front">
                     <img src="" alt=" " class="work__img">
-                    <h3 class="work__title"></h3>
-                    <span class="work__button">
+                    <h3 class="work__title">Lorem, ipsum.</h3>
+                    <span class="work__button">Demo
                         <i class="fa-solid fa-angle-right work__button-icon"></i>
                     </span>
 
@@ -514,7 +514,10 @@
         <!-- Contact -->
         <section class="contact section" id="contact">
             <h2 class="section__title" data-heading="Get in touch">Contact Me</h2>
-            <div class="cotact__container container grid">
+            <div class="contact__container container grid">
+
+
+
                 <div class="contact__content">
                     <div class="contact__info">
                         <div class="contact__card">
@@ -535,9 +538,45 @@
                                 <i class="fa-solid fa-chevron-right uil contact__button-icon"></i>
                             </span>
                         </div>
+                        <div class="contact__card">
+                            <i class="fa-brands fa-whatsapp contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">shiringohariii@gmail.com</span>
+                            <span class="contact__button">Write Me
+                                <i class="fa-solid fa-chevron-right uil contact__button-icon"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="contact__content"> </div>
+
+
+                <div class="contact__content">
+                    <form action="" class="contact__form">
+                        <div class="input__container">
+                            <input type="text" name="" id="" class="input">
+                            <label for=""> Username </label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input__container">
+                            <input type="email" name="" id="" class="input">
+                            <label for=""> Email </label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input__container">
+                            <input type="tel" name="" id="" class="input">
+                            <label for=""> phone </label>
+                            <span>phone</span>
+                        </div>
+                        <div class="input__container textarea">
+                            <textarea name="" id="" class="input"></textarea>
+                            <label for="">
+                                Message </label>
+                            <span>Message</span>
+                        </div>
+                        <button type="submit">
+                            <i class="fa-regular fa-paper-plane"></i> Send Message </button>
+                    </form>
+                </div>
 
 
             </div>
@@ -545,11 +584,13 @@
 
 
 
-
+      
     </main>
 
+    <!-- Mixitup Filter -->
 
-    <script src="./assets/main/script.js"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
+    <script src="./assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/e9ff0c2f3a.js" crossorigin="anonymous"></script>
 </body>
 
