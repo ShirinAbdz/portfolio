@@ -199,6 +199,32 @@ input {
 
 }
 
+.nav__toggle {
+    height: 32px;
+    width: 36px;
+    cursor: pointer;
+    position: fixed;
+    right: 1.5rem;
+    top: 2rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav__close{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    cursor: pointer;
+    display: none;
+}
+
 .nav__link.active-link,
 .nav__link:hover {
     color: var(--skin-color);
@@ -835,9 +861,45 @@ input {
     background-color: var(--scroll-thumb-color);
     border-radius: .5rem;
 }
-/* ================== Sidebar ================== */
-/* ================== Sidebar ================== */
-/* ================== Sidebar ================== */
-/* ================== Sidebar ================== */
-/* ================== Sidebar ================== */
-/* ================== Sidebar ================== */
+
+/* ================== responsive desing  ================== */
+@media screen and (max-width:1408px) {
+    .container {
+        margin-left: var(--mb-2-5);
+        margin-right: var(--mb-2-5);
+    }
+}
+
+@media screen and (max-width:1216px) {
+    .about_container {
+        column-gap: 2.5rem;
+    }
+
+    .about__description {
+        padding-right: 0;
+    }
+
+    .work__container {
+        grid-template-columns: repeat(2, 330px);
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        margin-left: 3rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:576px) {}
+
+@media screen and (max-width:350px) {}
+
+@media screen and (max-width:1408px) {}
+
+@media screen and (max-width:1408px) {}
+
+@media screen and (max-width:1408px) {}
