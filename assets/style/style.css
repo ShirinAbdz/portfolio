@@ -22,6 +22,7 @@
     --mb-0-25: 0.25rem;
     --mb-0-5: 0.5rem;
     --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
@@ -257,14 +258,13 @@ input {
 /* ================== Home Section ================== */
 
 .home {
-    background: url("../image/me\ 2.png");
+    background: url(../image/me\ 2.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right center;
-    background-repeat: no-repeat;
-
+    background-position: right;
 
     height: 100vh;
+    border: 2px solid white;
 }
 
 .home__container {
@@ -308,32 +308,46 @@ input {
     position: relative;
 }
 
-.home__social-follow::after {
+/* .home__social-follow::after {
     content: "";
     position: absolute;
-    width: 1rem;
-    height: 2rem;
+    width: 2rem;
+    height: 1rem;
     background-color: var(--text-color);
     right: 45%;
     top: 50%;
-}
+} */
 
 .home__social-links {
     display: inline-flex;
-    column-gap: 1rem;
+    column-gap: 2rem;
 }
 
 .home__social-link {
     font-size: 1.08rem;
     color: var(--text-color);
-    transition: .3s;
+    transition: .4s ease-in-out;
 
+
+}
+.home__social-link i {
+  margin-right: 8px;
 
 }
 
 .home__social-link:hover {
     transform: translateY(.25rem);
 }
+.home__social-link:hover:nth-child(1) {
+    color: rgb(64, 30, 236);
+}
+.home__social-link:hover:nth-child(2) {
+    color: rgb(35, 142, 229);
+}
+.home__social-link:hover:nth-child(3) {
+    color: rgb(163, 41, 179);
+}
+
 
 .my__info {
     display: flex;
