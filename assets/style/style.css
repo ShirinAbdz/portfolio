@@ -627,10 +627,45 @@ input {
 
 /* ================== Skills Section ================== */
 
-.skills__container {
+
+
+.skills {
+    height: 100vh;
+    border: 2px solid white;
+}
+
+/* .skills__container {
     grid-template-columns: 360px 320px;
     column-gap: 3rem;
     justify-content: center;
+} */
+
+.skills__content table {
+    border: 2px solid yellow;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.skills__content table th {
+    margin: auto;
+}
+
+.skills__content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+/* th {
+   
+} */
+
+td , th {
+    text-align: center;
+    margin: auto;
+    border: 2px solid red;
+    padding: 20px 0;
+    width: 10%;
 }
 
 .skills__header {
@@ -1076,6 +1111,7 @@ input {
     .qualification__container {
         grid-template-columns: repeat(2, 290px);
     }
+
 
     .skills__container {
         grid-template-columns: 340px 300px;
