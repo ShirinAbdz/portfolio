@@ -1591,12 +1591,10 @@ th {
         height: 100vh;
 
     }
-
     .work__card {
         margin: auto;
 
     }
-
     .work__container {
         margin: auto;
         display: flex;
