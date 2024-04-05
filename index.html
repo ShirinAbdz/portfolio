@@ -8,13 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shirin Abdz</title>
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- <div class="nav__toggle" id="nav-toggle">
-        <i class="fa-solid fa-bars"></i>
-        </a>
-    </div> -->
+
     <aside class="sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav__logo">
@@ -35,12 +37,7 @@
                         <li class="nav__item">
                             <a href="#work" class="nav__link">Work</a>
                         </li>
-                        <!-- <li class="nav__item">
-                            <a href="#services" class="nav__link">Services</a>
-                        </li> -->
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -49,16 +46,12 @@
 
             </div>
 
-            <!-- <div class="nav__close" id="nav-close">
-                <i class="fa-solid fa-xmark"></i></a>
-            </div> -->
         </nav>
     </aside>
     <main class="main">
         <section class="home" id="home">
-            <div class="home__container container grid">
-                <div class="home__social">
-                    <!-- <span class="home__social-follow">Follow me on </span> -->
+            <div class="home__container container  ">
+                <div class="home__social  ">
                     <div class="home__social-links">
                         <a href="https://www.linkedin.com/in/shirin-abdollahzadeh-65b689199/" target="_blank"
                             class="home__social-link">
@@ -68,33 +61,33 @@
                         <a href="https://github.com/ShirinAbdz" target="_blank" class="home__social-link">
                             <i class="fa-brands fa-github"></i>Github</a>
                     </div>
-                    <!-- <img src="./assets/image/me 2.png" alt="my image" class="home__image"> -->
 
                 </div>
-                <div class="home__data">
+                <div class="home__data" >
                     <h1 class="home__title">Hi, I'm Shirin </h1>
                     <h3 class="home__subtitle"> <i> Junior Frontend Web Developer</i></h3>
-                    <div class="home__description">
+                    <div class="home__description" id="description">
+                            
+                     
                         I’m a Software Engineering graduate passionate about code and
                         creativity.
                         <br>
-                        I blend art and logic to create user-friendly interfaces. I'm a real fast learner who excels in
-                        dynamic environments, solves complex problems with an analytical mindset.
+                        I blend art and logic to create user-friendly interfaces.
+                        <br> I'm a real fast learner who excels in
+                        dynamic environments, solves complex problems with an analytical mindset. 
                     </div>
-                    <a href="#about" class="button"><i class="fa-solid fa-user"></i>More about me</a>
+                    <a href="#about" class="button"><i class="fa-solid fa-file-arrow-down"></i>Download My Resume</a>
                 </div>
                 <div class="my__info">
                     <div class="info__item">
                         <i class="fa-regular fa-envelope  info__icon"></i>
                         <div>
-                            <!-- <h3 class="info__title"> Email </h3> -->
                             <a target="_blank" class="info__subtitle" href="mailto:shiringohariii@gmail.com"> Email </a>
                         </div>
                     </div>
                     <div class="info__item">
                         <i class="fa-brands fa-telegram  info__icon"></i>
                         <div>
-                            <!-- <h3 class="info__title">Telegram  https://t.me/shirin_abdz </h3> -->
                             <a target="_blank" href="https://t.me/shirin_abdz" class="info__subtitle"> Telegram </a>
                         </div>
                     </div>
@@ -105,7 +98,7 @@
 
         <!-- Qualification -->
 
-        <section class="about " id="about">
+        <section class="about section" id="about">
             <h2 class="section__title about__section-title" data-heading="My Intro">
                 About Me
             </h2>
@@ -114,7 +107,7 @@
 
                 <div class="about__data">
 
-                    <h3 class="about__heading"> Hi, again! <i class="fa-solid fa-face-laugh-wink"
+                    <h3 class="about__heading"> Hi devs! <i class="fa-solid fa-face-laugh-wink"
                             style="color: #ffffff;"></i> </h3>
                     <ul class="about__description">
                         <li>As a student, I've paticipated in many <span>bootcamps</span> to learn more. </li>
@@ -122,36 +115,6 @@
                             sessions just to learn more about <strong>tech industry</strong>.</li>
                         <li>Wanna know more about my <span>soft skills</span>? </li>
                     </ul>
-                    <div class="about__info grid">
-                        <div class="about__box">
-                            <h3 class="about__title"> + Fast Learner</h3>
-                        </div>
-                        <div class="about__box">
-                            <h3 class="about__title">Problem Solver</h3>
-                        </div>
-                        <div class="about__box">
-                            <h3 class="about__title">Create Passion</h3>
-                        </div>
-                        <div class="about__box">
-                            <h3 class="about__title">Teamworker</h3>
-                        </div>
-                        <div class="about__box">
-                            <h3 class="about__title">Empathy</h3>
-                        </div>
-                        <div class="about__box">
-                            <h3 class="about__title">Effective Communication</h3>
-                        </div>
-                        <div class="about__box">
-                            <h3 class="about__title">Analytical Mindset</h3>
-                        </div>
-                        <div class="about__box">
-                            <h3 class="about__title">Continuous Learning</h3>
-                        </div>
-                        <div class="about__box">
-                            <h3 class="about__title">Collaboration</h3>
-                        </div>
-
-                    </div>
                     <a href="mailto:shiringohariii@gmail.com" target="_blank" class="button">
                         <i class="fa-solid fa-location-arrow button__icon"></i>
                         Contact Me
@@ -198,23 +161,10 @@
                             </span>
                         </div>
                     </div>
-
                     <div class="timeline">
                         <div class="timeline__item">
                             <div class="circle__dot"></div>
-                            <h3 class="timeline__title">First Prize in Presentaion Competiotion <i
-                                    class="fa-solid fa-crown" style="color: #fff700;"></i></h3>
-                            <p class="timeline__text">University of Guilan</p>
-                            <span class="timeline__date">
-                                <i class="fa-regular fa-calendar"></i>
-                                October 2021
-                            </span>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline__item">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">Top 3 teams in CodeQuest Coding Competition <i
+                            <h3 class="timeline__title">Top 3 teams in CodeQuest <i>Javascript</i> Competition <i
                                     class="fa-solid fa-crown" style="color: #fe9900;"></i></h3>
                             <p class="timeline__text">University of Guilan</p>
                             <span class="timeline__date">
@@ -223,22 +173,16 @@
                             </span>
                         </div>
                     </div>
-
-
-
                 </div>
-
-        
-
             </div>
         </section>
 
-        
+
         <section class="skills section" id="skills">
-            <div data-heading="My Skills" class="section__title">My Skills</div>
+            <div data-heading="My Skills" class="section__title title__of__skills">My Skills</div>
             <div class="skills__container container grid">
                 <div class="skills__content">
-                    <table>
+                    <table class="technical">
                         <thead>
                             <tr>
                                 <th colspan="6">Technical</th>
@@ -247,45 +191,42 @@
                         <tbody>
                         <tbody>
                             <tr>
-                                <td>Javascript</td>
                                 <td>HTML</td>
-                                <td>Git</td>
-
+                                <td>Javascript</td>
+                                <td rowspan="2">Git</td>
                             </tr>
+
                             <tr>
-                                <td>ReactJs</td>
                                 <td>CSS</td>
-                                <td>Github</td>
-
+                                <td>ReactJs</td>
                             </tr>
 
                             <tr>
-                                <td>Redux</td>
                                 <td>Taiwind</td>
-                                <td>GitLab</td>
-
+                                <td>Redux</td>
+                                <td rowspan="2">Github</td>
                             </tr>
+
                             <tr>
-                                <td>NextJs</td>
                                 <td>Material UI</td>
-                                <td></td>
+                                <td>NextJs</td>
+
+
                             </tr>
+
                             <tr>
-                                <td>Typescript</td>
                                 <td>Bootstrap</td>
-                                <td></td>
-
+                                <td rowspan="2">Typescript</td>
+                                <td rowspan="2">GitLab</td>
                             </tr>
-                            <tr>
-                                <td></td>
-                                <td>Sass</td>
-                                <td></td>
 
+                            <tr>
+                                <td>Sass</td>
                             </tr>
                         </tbody>
                         </tbody>
                     </table>
-                    <table>
+                    <table class="soft">
                         <thead>
                             <tr>
 
@@ -296,356 +237,132 @@
                         <tbody>
                             <tr>
                                 <td> Fast Learner </td>
-                                <td>Row 1, Column 2</td>
-                                <td>Row 1, Column 3</td>
+                                <td>Empathy
+                                </td>
+
                             </tr>
                             <tr>
-                                <td>Row 2, Column 1</td>
-                                <td>Row 2, Column 2</td>
-                                <td>Row 2, Column 3</td>
+                                <td>Problem Solver
+                                </td>
+                                <td>Teamworker
+
+                                </td>
                             </tr>
                             <tr>
-                                <td>Row 3, Column 1</td>
-                                <td>Row 3, Column 2</td>
-                                <td></td>
+                                <td>Analytical Mindset
+                                </td>
+                                <td>Collaboration</td>
                             </tr>
                             <tr>
-                                <td>Row 3, Column 1</td>
-                                <td>Row 3, Column 2</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Row 3, Column 1</td>
-                                <td>Row 3, Column 2</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Row 3, Column 1</td>
-                                <td>Row 3, Column 2</td>
-                                <td></td>
+                                <td>Effective Communication
+                                </td>
+                                <td>Continuous Learning</td>
+
+
                             </tr>
                         </tbody>
 
                         </tbody>
                     </table>
 
-                    <!-- <div class="skills__group skills__active" data-content id="frontend">
-                        <div class="skills__list grid">
 
-                            <div class="skills__data">
-                                <div class="skills__title">
-                                    <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills__bar">
-                                <div class="skills__percentage" style="width: 90%;"></div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__title">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills__bar">
-                                <div class="skills__percentage" style="width: 80%;"></div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__title">
-                                    <h3 class="skills__name">Bootstrap</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills__bar">
-                                <div class="skills__percentage" style="width: 70%;"></div>
-                            </div>
-                        </div>
-
-
-                    </div> -->
-                    <!-- <div class="skills__group " data-content id="desgin">
-                        <div class="skills__list grid">
-
-
-
-                            <div class="skills__data">
-                                <div class="skills__title">
-                                    <h3 class="skills__name">Figma</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills__bar">
-                                <div class="skills__percentage" style="width: 90%;"></div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__title">
-                                    <h3 class="skills__name">Indesign</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills__bar">
-                                <div class="skills__percentage" style="width: 80%;"></div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__title">
-                                    <h3 class="skills__name">X</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills__bar">
-                                <div class="skills__percentage" style="width: 70%;"></div>
-                            </div>
-                        </div>
-
-
-                    </div> -->
-                    <!-- <div class="skills__group" data-content id="ai">
-                        <div class="skills__list grid">
-
-                            <div class="skills__data">
-                                <div class="skills__title">
-                                    <h3 class="skills__name">Js</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills__bar">
-                                <div class="skills__percentage" style="width: 60%;"></div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__title">
-                                    <h3 class="skills__name">React</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills__bar">
-                                <div class="skills__percentage" style="width: 50%;"></div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__title">
-                                    <h3 class="skills__name">Next</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills__bar">
-                                <div class="skills__percentage" style="width: 40%;"></div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
 
         <!-- Work -->
         <section class="work section" id="work">
-            <h2 class="section__title" data-heading="My Portfolio">Recent Works</h2>
+            <h2 class="section__title works__title" data-heading="My Portfolio">Recent Works</h2>
             <div class="work__filters">
                 <span class="work__item active-work" data-filter="all">All</span>
-                <span class="work__item" data-filter=".web">Web</span>
-                <span class="work__item" data-filter=".design">Design</span>
-                <span class="work__item" data-filter=".front">Front</span>
+                <span class="work__item" data-filter=".js">Javascript</span>
+                <span class="work__item" data-filter=".react">ReactJs</span>
+                <span class="work__item" data-filter=".next">NextJs</span>
 
             </div>
 
-            <div class="work__container container grid">
-                <div class="work__card mix web">
-                    <img src="" alt=" " class="work__img">
-                    <h3 class="work__title">Lorem, ipsum.</h3>
-                    <span class="work__button">Demo
-                        <i class="fa-solid fa-angle-right work__button-icon"></i>
-                    </span>
+            <div class="work__container container "> <!--grid is gone -->
+                <div class="work__card mix react">
+                    <img src="./assets/image/crypto.png" alt=" " class="work__img">
+                    <h3 class="work__title">Crypto Chain</h3>
+                    <div class="work__button">
+                        <button>
+                            <a href="https://crypto-chain-one.vercel.app/" target="_blank">Preview</a>
+                            <i class="fa-solid fa-angle-right work__button-icon"></i>
 
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">Lorem, ipsum.</h3>
-                        <p class="details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
-                            officiis consequatur facilis a perferendis laboriosam aliquid expedita sequi praesentium
-                            quos!</p>
-                        <ul class="details__info">
-                            <li>Created <span>4 dec 2020</span></li>
-                            <li>Technologies <span>html css </span></li>
-                            <li>Role <span>frontend</span></li>
-                            <li>view <span><a href="#"></a></span></li>
-                        </ul>
+                        </button>
+                        <button class="github__button">
+                            <a href="https://github.com/ShirinAbdz/crypto-chain" target="_blank">Github</a>
+                            <i class="fa-solid fa-angle-right work__button-icon"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="work__card mix front">
-                    <img src="" alt=" " class="work__img">
-                    <h3 class="work__title">Lorem, ipsum.</h3>
-                    <span class="work__button">Demo
-                        <i class="fa-solid fa-angle-right work__button-icon"></i>
-                    </span>
+                <div class="work__card mix js">
+                    <img src="./assets/image/Screenshot (116).png" alt=" " class="work__img">
+                    <h3 class="work__title">Calculator</h3>
+                    <div class="work__button">
+                        <button>
+                            <a href="https://calculator-seven-zeta-42.vercel.app/" target="_blank">Preview</a>
+                            <i class="fa-solid fa-angle-right work__button-icon"></i>
 
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">Lorem, ipsum.</h3>
-                        <p class="details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
-                            officiis consequatur facilis a perferendis laboriosam aliquid expedita sequi praesentium
-                            quos!</p>
-                        <ul class="details__info">
-                            <li>Created <span>4 dec 2020</span></li>
-                            <li>Technologies <span>html css </span></li>
-                            <li>Role - <span>frontend</span></li>
-                            <li>view - <span><a href="#"></a></span></li>
-                        </ul>
+                        </button>
+                        <button>
+                            <a href="https://github.com/ShirinAbdz/calculator" target="_blank">Github</a>
+                            <i class="fa-solid fa-angle-right work__button-icon"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="work__card mix design">
-                    <img src="" alt=" " class="work__img">
-                    <h3 class="work__title">Lorem, ipsum.</h3>
-                    <span class="work__button">Demo
-                        <i class="fa-solid fa-angle-right work__button-icon"></i>
-                    </span>
+                <div class="work__card mix react">
+                    <img src="./assets/image/contact.png" alt=" " class="work__img">
+                    <h3 class="work__title">Contct App</h3>
+                    <div class="work__button">
+                        <button>
+                            <a href="https://contact-app-two-wheat.vercel.app/" target="_blank">Preview</a>
+                            <i class="fa-solid fa-angle-right work__button-icon"></i>
 
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title"></h3>
-                        <p class="details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
-                            officiis consequatur facilis a perferendis laboriosam aliquid expedita sequi praesentium
-                            quos!</p>
-                        <ul class="details__info">
-                            <li>Created <span>4 dec 2020</span></li>
-                            <li>Technologies <span>html css </span></li>
-                            <li>Role - <span>frontend</span></li>
-                            <li>view - <span><a href="#"></a></span></li>
-                        </ul>
+                        </button>
+                        <button>
+                            <a href="https://github.com/ShirinAbdz/contact-app" target="_blank">Github</a>
+                            <i class="fa-solid fa-angle-right work__button-icon"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="work__card mix web">
-                    <img src="" alt=" " class="work__img">
-                    <h3 class="work__title">Lorem, ipsum.</h3>
-                    <span class="work__button">Demo
-                        <i class="fa-solid fa-angle-right work__button-icon"></i>
-                    </span>
+                <div class="work__card mix next">
+                    <img src="./assets/image/twitter.png" alt=" " class="work__img">
+                    <h3 class="work__title">Twitter Clone</h3>
+                    <div class="work__button">
+                        <button>
+                            <a href="#" target="_blank" class="not_active">Preview<i class="fa-solid fa-angle-right work__button-icon"></i></a>
+                            
 
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title"></h3>
-                        <p class="details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
-                            officiis consequatur facilis a perferendis laboriosam aliquid expedita sequi praesentium
-                            quos!</p>
-                        <ul class="details__info">
-                            <li>Created <span>4 dec 2020</span></li>
-                            <li>Technologies <span>html css </span></li>
-                            <li>Role - <span>frontend</span></li>
-                            <li>view - <span><a href="#"></a></span></li>
-                        </ul>
+                        </button>
+                        <button>
+                            <a href="https://github.com/ShirinAbdz/twitter-clone-nextjs" target="_blank">Github</a>
+                            <i class="fa-solid fa-angle-right work__button-icon"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="work__card mix front">
-                    <img src="" alt=" " class="work__img">
-                    <h3 class="work__title">Lorem, ipsum.</h3>
-                    <span class="work__button">Demo
-                        <i class="fa-solid fa-angle-right work__button-icon"></i>
-                    </span>
+                <div class="work__card mix js">
+                    <img src="./assets/image/twitter.png" alt=" " class="work__img">
+                    <h3 class="work__title">Personal Website</h3>
+                    <div class="work__button">
+                        <button>
+                            <a href="https://shirin-abdz.vercel.app/" target="_blank" class="not_active">Preview<i class="fa-solid fa-angle-right work__button-icon"></i></a>
+                            
 
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title"></h3>
-                        <p class="details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
-                            officiis consequatur facilis a perferendis laboriosam aliquid expedita sequi praesentium
-                            quos!</p>
-                        <ul class="details__info">
-                            <li>Created <span>4 dec 2020</span></li>
-                            <li>Technologies <span>html css </span></li>
-                            <li>Role - <span>frontend</span></li>
-                            <li>view - <span><a href="#"></a></span></li>
-                        </ul>
+                        </button>
+                        <button>
+                            <a href="https://github.com/ShirinAbdz/portfolio" target="_blank">Github</a>
+                            <i class="fa-solid fa-angle-right work__button-icon"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="work__card mix front">
-                    <img src="" alt=" " class="work__img">
-                    <h3 class="work__title">Lorem, ipsum.</h3>
-                    <span class="work__button">Demo
-                        <i class="fa-solid fa-angle-right work__button-icon"></i>
-                    </span>
 
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title"></h3>
-                        <p class="details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
-                            officiis consequatur facilis a perferendis laboriosam aliquid expedita sequi praesentium
-                            quos!</p>
-                        <ul class="details__info">
-                            <li>Created <span>4 dec 2020</span></li>
-                            <li>Technologies <span>html css </span></li>
-                            <li>Role - <span>frontend</span></li>
-                            <li>view - <span><a href="#"></a></span></li>
-                        </ul>
-                    </div>
-                </div>
+
 
             </div>
 
         </section>
-        <!-- Contact -->
-        <section class="contact section" id="contact">
-            <h2 class="section__title" data-heading="Get in touch">Contact Me</h2>
-            <div class="contact__container container grid">
-
-
-
-                <div class="contact__content">
-                    <div class="contact__info">
-                        <div class="contact__card">
-                            <i class="fa-regular fa-envelope contact__card-icon"></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">shiringohariii@gmail.com</span>
-                            <span class="contact__button">Write Me
-                                <i class="fa-solid fa-chevron-right uil contact__button-icon"></i>
-                            </span>
-                        </div>
-
-
-                        <div class="contact__card">
-                            <i class="fa-brands fa-whatsapp contact__card-icon"></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">shiringohariii@gmail.com</span>
-                            <span class="contact__button">Write Me
-                                <i class="fa-solid fa-chevron-right uil contact__button-icon"></i>
-                            </span>
-                        </div>
-                        <div class="contact__card">
-                            <i class="fa-brands fa-whatsapp contact__card-icon"></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">shiringohariii@gmail.com</span>
-                            <span class="contact__button">Write Me
-                                <i class="fa-solid fa-chevron-right uil contact__button-icon"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="contact__content">
-                    <form action="" class="contact__form">
-                        <div class="input__container">
-                            <input type="text" name="" id="" class="input">
-                            <label for=""> Username </label>
-                            <span>Username</span>
-                        </div>
-                        <div class="input__container">
-                            <input type="email" name="" id="" class="input">
-                            <label for=""> Email </label>
-                            <span>Email</span>
-                        </div>
-                        <div class="input__container">
-                            <input type="tel" name="" id="" class="input">
-                            <label for=""> phone </label>
-                            <span>phone</span>
-                        </div>
-                        <div class="input__container textarea">
-                            <textarea name="" id="" class="input"></textarea>
-                            <label for="">
-                                Message </label>
-                            <span>Message</span>
-                        </div>
-                        <button type="submit">
-                            <i class="fa-regular fa-paper-plane"></i> Send Message </button>
-                    </form>
-                </div>
-
-
-            </div>
-        </section>
-
-
-
 
     </main>
 

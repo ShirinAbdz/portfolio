@@ -20,7 +20,7 @@ tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const target = document.querySelector(tab.dataset.target);
     tabContent.forEach((tabContents) => {
-      tabContents.classList.remove("skills__active");
+      tabContents.classList.remove("active-work");
     });
     target.classList.add("skills__active");
     tabs.forEach((tab) => {
@@ -43,16 +43,21 @@ let mixerPortfolio = mixitup(".work__container", {
 
 // <!-- Link Active Work --!>
 
-const linkWork = document.querySelectorAll(".work__item");
+// Select all work items
+const linkWork = document.querySelectorAll(".work__item a");
 
-linkWork.forEach((l) =>
-  l.addEventListener("click", () => {
-    linkWork.forEach((l) => l.classList.remove("active-work"));
-    l.classList.add("active-work");
-  })
-);
+workItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    // Remove 'active-work' class from all items
+    workItems.forEach((item) => item.classList.remove("active-work"));
+    // Add 'active-work' class to the clicked item
+    this.classList.add("active-work");
+  });
+});
 
-linkWork.forEach((l) => l.addEventListener("click", activeWork));
+linkWork.forEach((link) => {
+  link.addEventListener("click", activeWork);
+});
 
 // <!-- input aimation --!>
 
@@ -99,3 +104,41 @@ function navHighlighter() {
     }
   });
 }
+
+
+
+
+
+
+// let placeholder = document.getElementById("description");
+// let words = ["Software Engineering graduate", "passionate about code and creativity", "a real fast learner","solves complex problems", "with analytical mindset ! :)"];
+// let index = 0;
+// function type(word){
+//     let i = 0;
+//     let writing = setInterval(()=>{
+//         placeholder.innerHTML += word.charAt(i);
+//         i ++;
+//         if(i>=word.length){
+//             clearInterval(writing);
+//             setTimeout(erase, 1000);
+//         }
+//     }, 75)
+
+// }
+
+// function erase(){
+//     let deleting = setInterval(() => {
+//         placeholder.innerHTML = placeholder.innerHTML.slice(0,-1);
+//         if(placeholder.innerHTML.length <= 0){
+//             clearInterval(deleting);
+//             index++;
+			
+//             if(index>=words.length){
+//                 index = 0;
+//             }
+//             type(words[index])
+//         }
+//     }, 8);
+
+// }
+// type(words[index]);
