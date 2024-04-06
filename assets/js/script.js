@@ -44,19 +44,15 @@ let mixerPortfolio = mixitup(".work__container", {
 // <!-- Link Active Work --!>
 
 // Select all work items
-const linkWork = document.querySelectorAll(".work__item a");
+const linkWork = document.querySelectorAll(".work__item");
+const workItems = document.querySelectorAll(".work__item");
 
 workItems.forEach((item) => {
-  item.addEventListener("click", function () {
-    // Remove 'active-work' class from all items
+  item.addEventListener("click", () => {
     workItems.forEach((item) => item.classList.remove("active-work"));
-    // Add 'active-work' class to the clicked item
-    this.classList.add("active-work");
+    item.classList.add("active-work");
+    console.log(item);
   });
-});
-
-linkWork.forEach((link) => {
-  link.addEventListener("click", activeWork);
 });
 
 // <!-- input aimation --!>
@@ -98,47 +94,8 @@ function navHighlighter() {
         .querySelector(`.nav_menu a[href*="${sectionId}"]`)
         .classList.add("active-link");
     } else {
-      document
-        .querySelector(`.nav_menu a[href*="${sectionId}"]`)
-        .classList.remove("active-link");
+      document.querySelector(`.nav_menu a[href*="${sectionId}"]`).classList.remove("active-link");
     }
   });
 }
 
-
-
-
-
-
-// let placeholder = document.getElementById("description");
-// let words = ["Software Engineering graduate", "passionate about code and creativity", "a real fast learner","solves complex problems", "with analytical mindset ! :)"];
-// let index = 0;
-// function type(word){
-//     let i = 0;
-//     let writing = setInterval(()=>{
-//         placeholder.innerHTML += word.charAt(i);
-//         i ++;
-//         if(i>=word.length){
-//             clearInterval(writing);
-//             setTimeout(erase, 1000);
-//         }
-//     }, 75)
-
-// }
-
-// function erase(){
-//     let deleting = setInterval(() => {
-//         placeholder.innerHTML = placeholder.innerHTML.slice(0,-1);
-//         if(placeholder.innerHTML.length <= 0){
-//             clearInterval(deleting);
-//             index++;
-			
-//             if(index>=words.length){
-//                 index = 0;
-//             }
-//             type(words[index])
-//         }
-//     }, 8);
-
-// }
-// type(words[index]);
