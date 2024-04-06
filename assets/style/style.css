@@ -112,23 +112,6 @@ input {
     height: max-content;
 }
 
-/* .home__description::after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    right: 0;
-    top: 0;
-    animation: blink 1s infinite steps(2, start);
-}
-
-@keyframes blink {
-    to {
-        visibility: hidden;
-    }
-
-} */
 
 
 .section {
@@ -309,10 +292,8 @@ input {
 }
 
 .home__container {
-
-    height: 100%;
-
-
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -336,12 +317,12 @@ input {
 }
 
 .home__social {
-    /* position: absolute; */
     top: 1.8rem;
     left: 0;
     display: flex;
     align-items: center;
     column-gap: 3.5rem;
+    padding-top: 40px;
 
 }
 
@@ -360,15 +341,6 @@ input {
     position: relative;
 }
 
-/* .home__social-follow::after {
-    content: "";
-    position: absolute;
-    width: 2rem;
-    height: 1rem;
-    background-color: var(--text-color);
-    right: 45%;
-    top: 50%;
-} */
 
 .home__social-links {
     display: inline-flex;
@@ -389,7 +361,12 @@ input {
 }
 
 .home__social-link:hover {
-    transform: translateY(.25rem);
+    transition: 0.5s ease-in-out;
+    background-color: #201f1fcc;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+
 }
 
 .home__social-link:hover:nth-child(1) {
@@ -402,6 +379,15 @@ input {
 
 .home__social-link:hover:nth-child(3) {
     color: rgb(163, 41, 179);
+}
+
+
+.home__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 120px;
+
 }
 
 .work__button button:hover {
@@ -506,14 +492,23 @@ input {
 }
 
 .about__container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0;
     align-items: center;
 }
 
+.about__data {
+    width: 45%;
+
+}
+
 .education {
     margin: auto;
-    width: 100%;
+    width: 45%;
+
 }
 
 
@@ -806,16 +801,27 @@ th {
     height: 100vh;
 }
 
+.work__title {
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
 .work__container {
+    margin-top: 10px;
     grid-template-columns: repeat(3, 330px);
     gap: 1.8rem;
     justify-content: center;
     padding-top: 1rem;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
-.not_active {
-    color: red;
+
+.work__button .not-active-button:hover {
+    background: rgb(68, 67, 67);
 }
+
 
 .work__filters {
     display: flex;
@@ -871,7 +877,6 @@ th {
 
 .work__title {
     font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-5);
 
 }
@@ -1515,7 +1520,7 @@ th {
         font-size: medium;
     }
 
-    .skills__content table  td {
+    .skills__content table td {
         padding: 10px 0;
         font-size: 0.9rem;
 
