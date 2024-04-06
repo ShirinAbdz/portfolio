@@ -112,18 +112,15 @@ document.addEventListener("DOMContentLoaded", function () {
           const targetId = this.getAttribute("href").substring(1);
           const targetSection = document.getElementById(targetId);
 
-          // Scroll to the target section
           window.scrollTo({
               top: targetSection.offsetTop ,
               behavior: "smooth"
           });
 
-          // Remove active-link class from all nav links
           navLinks.forEach((navLink) => {
               navLink.classList.remove("active-link");
           });
 
-          // Add active-link class to the clicked nav link
           this.classList.add("active-link");
       });
   });
