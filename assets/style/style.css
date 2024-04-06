@@ -1148,7 +1148,6 @@ th {
     } */
 
     .about__container {
-        border: 2px solid yellow;
         grid-template-columns: 1fr;
         row-gap: 1, 5rem;
     }
