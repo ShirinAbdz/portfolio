@@ -488,7 +488,6 @@ input {
 /* ================== About Section ================== */
 .about , .home , .skills , .work {
     height: 100vh;
-    border: 2px solid white;
 }
 
 .about__container {
