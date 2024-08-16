@@ -15,7 +15,7 @@ function Herosection() {
     >
       <div className="cta mx-auto mt-2">
         <h1 className="mt-0 mb-4">
-          I’m {herosectionData.name}
+          I’m {herosectionData.name} 
           <span className="dot"></span>
         </h1>
         <p className="mb-4">{herosectionData.aboutMe}</p>
